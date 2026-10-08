@@ -9,10 +9,16 @@ dist/
 configs/resources.json
 data/
 runs/
-weights/
+weights/*
+!weights/reconstruction/
+!weights/README.md
+weights/reconstruction/*
 *.pt
 *.pth
 *.ckpt
 *.log
 *.ipynb
 .DS_Store
+!weights/reconstruction/final.pt
+!weights/reconstruction/inference_config.json
+!weights/reconstruction/metadata.json

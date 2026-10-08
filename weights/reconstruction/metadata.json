@@ -1,0 +1,19 @@
+{
+  "model": "CellLift",
+  "architecture": "celllift.reconstruction.src.model.ConditionalSceneNetwork",
+  "file": "final.pt",
+  "sha256": "c3de9f9eb17ebad942207c73117e4d75fab3b8e76fef7aec3087bca4947b4697",
+  "size_bytes": 2482466,
+  "state_dict_entries": 110,
+  "candidate_count": 9,
+  "image_embedding_dimension": 384,
+  "selection_split": "val",
+  "contents": [
+    "model parameters and buffers",
+    "scorer normalization",
+    "training input normalization",
+    "model configuration",
+    "selection metadata"
+  ],
+  "license": "MIT"
+}

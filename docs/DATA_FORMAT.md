@@ -26,4 +26,4 @@ Reconstruction checkpoints contain model parameters and the normalization needed
 
 Reconstruction writes predicted nuclear/cell bodies, candidate scores, selected labels and graph-level metadata. Evaluation produces per-object or per-graph records, followed by grouped summaries. Downstream prediction produces probabilities and task metrics; structural analyses produce descriptor tables and adjusted effects; attribution produces model-input contributions and replacement comparisons.
 
-Raw images, sample inventories, prepared caches and model checkpoints are separate from the source distribution. Obtain each dataset through its provider and preserve its access and reuse terms.
+The final CellLift reconstruction checkpoint and its normalization are included under `weights/reconstruction/`; see [the loading instructions](../weights/README.md). Raw images, sample inventories, prepared caches, downstream task checkpoints and third-party pretrained models are obtained separately. Obtain each dataset through its provider and preserve its access and reuse terms.

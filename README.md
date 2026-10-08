@@ -30,7 +30,20 @@ Modules are under [`src/celllift`](src/celllift). The [study guide](docs/STUDY_G
 
 Scientific settings are supplied with their modules under `configs/`. External files are configured through `configs/resources.json`, using [the example](configs/resources.example.json). The [resource index](docs/resource_index.json) identifies each resource's consuming modules.
 
-This is a source-code distribution. Images, subject-level tables, feature caches, predictions and pretrained checkpoints are obtained or generated separately. Dataset-specific pipelines have distinct input contracts; the reconstruction model consumes prepared target-section graphs.
+The trained CellLift reconstruction checkpoint is included in this repository. Images, subject-level tables, feature caches and predictions are obtained or generated separately. Dataset-specific pipelines have distinct input contracts; the reconstruction model consumes prepared target-section graphs.
+
+## Trained model weights
+
+- [Download the final CellLift checkpoint](https://raw.githubusercontent.com/cheng-cheng-x/CellLift/main/weights/reconstruction/final.pt)
+- [Inference configuration](weights/reconstruction/inference_config.json)
+- [Checkpoint metadata and SHA-256](weights/reconstruction/metadata.json)
+- [Loading instructions](weights/README.md)
+
+The checkpoint contains the trained geometry model and candidate scorer, together with the input and scorer normalization required for inference. It is the validation-selected CellLift model used for held-out reconstruction evaluation. The file is approximately 2.48 MB and can be downloaded directly without Git LFS. Task-specific downstream checkpoints and third-party pretrained models are separate artifacts.
+
+## License
+
+The code and included CellLift checkpoint are distributed under the [MIT License](LICENSE).
 
 ## Research protocol
 

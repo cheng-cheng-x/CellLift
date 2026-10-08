@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "celllift"
 version = "0.1.0"
 description = "Three-dimensional nuclear and cell inference from single H&E sections"
+license = {file = "LICENSE"}
 requires-python = ">=3.10"
 dependencies = ["numpy", "torch", "torchvision", "scipy", "pandas", "pyarrow", "PyYAML", "scikit-learn", "matplotlib", "Pillow", "lmdb", "opencv-python", "h5py", "tifffile"]
 

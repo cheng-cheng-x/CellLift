@@ -1,0 +1,49 @@
+{
+  "full_stats": {
+    "ray_mean_um": 2.741941197678274,
+    "ray_std_um": 1.0609591235737894
+  },
+  "config": {
+    "seed": 42,
+    "k": 9,
+    "decode_chunk": 8192,
+    "table_chunk": 32768,
+    "observation_chunk": 32768,
+    "support_chunk": 8192,
+    "contact_chunk": 8192,
+    "selection_sweeps": 4,
+    "scene_temperature": 1.0,
+    "geometry_max_epochs": 30,
+    "scorer_max_epochs": 20,
+    "lr": [
+      0.0003,
+      0.0001,
+      3e-05
+    ],
+    "clip": 5.0,
+    "batch_size": 8,
+    "network_precision": "float32",
+    "monitor_definition": "mean_ROI scene free energy of O+P+10*linear_contact; shape has one scene; candidate stage uses V6 seven-scene support",
+    "warm_epochs": 2,
+    "contact_weight": 10.0,
+    "contact_objective": "linear_true_contact",
+    "shape_max_epochs": 20,
+    "training_selection_sweeps": 5,
+    "online_score_weight": 1.0,
+    "shape_stage": "single_body_random_seed42",
+    "candidate_initialization": "internal shape checkpoint, drop position row, direct shape heads, zero final query embedding",
+    "dataset": "full_8813_train_1102_val",
+    "score_cpu_cache_graphs": 128,
+    "evaluation_splits": [
+      "val"
+    ],
+    "test_policy": "Reserved for independent final evaluation after model selection; not accessed by training or validation",
+    "cache_workers": 8,
+    "selection_split": "val",
+    "train_graphs": 8813,
+    "validation_graphs": 1102,
+    "protocol": "train_val_test",
+    "full_replay": false
+  },
+  "protocol": "train_val_test"
+}
