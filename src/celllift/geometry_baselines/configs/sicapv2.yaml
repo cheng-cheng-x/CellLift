@@ -1,0 +1,32 @@
+protocol_id: paper_rgb_decoupled_mask2d_3d_full_factorial_geometry_baselines
+dataset: sicapv2
+paths:
+  model_input_root: resource://artifact_0122
+  set_encoding_data_root: resource://artifact_0164
+  mask_conditioning_data_root: resource://artifact_0166
+  data_root: resource://artifact_0146
+  result_root: resource://artifact_0168
+split:
+  validation_folds: 4
+  official_test_frozen: true
+probe:
+  conditioning_mode: mask_rays_only
+  inner_folds: 3
+geometry_training:
+  seeds:
+  - 17
+  - 42
+  - 73
+  - 101
+  - 137
+  encoders:
+  - meanpool
+  - deepsets
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  max_epochs: 100
+  patience: 15
+  dropout: 0.1
+  token_budget: 32000
+runtime:
+  bootstrap_replicates: 10000

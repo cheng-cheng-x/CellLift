@@ -1,0 +1,50 @@
+{
+  "methods": [
+    "cylinder",
+    "ellipsoid",
+    "p4"
+  ],
+  "seed": 42,
+  "height_grid": [
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0,
+    3.0
+  ],
+  "xy_grid": [
+    1.0,
+    1.15,
+    1.35,
+    1.6,
+    2.0
+  ],
+  "z_grid": [
+    1.0,
+    1.25,
+    1.5,
+    2.0,
+    3.0
+  ],
+  "refinement_factor": 1.15,
+  "height_curve": [
+    0.75,
+    1.0,
+    1.5
+  ],
+  "contact_weight": 10.0,
+  "caps": [
+    800,
+    4000
+  ],
+  "ratios": [
+    3,
+    6
+  ],
+  "pixel_um": 0.46,
+  "slab_um": 5.0,
+  "calibration": "all 1024 TRAIN only, fixed 150-point grid plus 27-point refinement",
+  "evaluation": "1101 held-out TEST ROIs; frozen calibration; trajectory-macro aggregation; 2000 bootstrap replicates",
+  "source_targets_sha256": "de2397f38a560494d71a182be8b82285a8316849711dfa76fc11eb1d22819e21"
+}

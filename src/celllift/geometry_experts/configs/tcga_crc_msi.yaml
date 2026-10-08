@@ -1,0 +1,14 @@
+protocol_id: geometry_experts
+dataset: tcga_crc_msi
+batch: expert-conditional_geometry
+paths:
+  data_root: resource://artifact_0176
+  result_root: resource://artifact_0178
+  set_encoding_data_root: resource://artifact_0136
+  projection_scene_source_root: resource://artifact_0091
+  geometry_baselines_data_root: resource://artifact_0150
+  baseline_predictions: resource://artifact_0174
+runtime:
+  python: resource://artifact_0097
+  cpu_threads: 8
+  bootstrap_replicates: 10000

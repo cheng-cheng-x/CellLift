@@ -1,0 +1,41 @@
+protocol_id: matched_geometry_controls
+dataset: bracs
+locked_provenance:
+  projection_scene_completed_source_sha256: 2ece755636f85a58b0ae7f4fbc14bdbbdb516eac86e52ca0420218423712a3ca
+  dinov2_source_commit: 7764ea0f912e53c92e82eb78a2a1631e92725fc8
+paths:
+  model_input_root: resource://artifact_0134
+  data_root: resource://artifact_0182
+  result_root: resource://artifact_0184
+  global_result_root: resource://artifact_0186
+  projection_scene_source_root: resource://artifact_0091
+  projection_scene_checkpoint: resource://artifact_0093
+  projection_scene_input_manifest: resource://artifact_0095
+  dino_source_root: resource://artifact_0138
+  dino_weight_path: resource://artifact_0140
+  mask_probe_conditional_geometry_root: resource://artifact_0188
+  eligible_graph_manifest: resource://artifact_0190
+  manifest_sources:
+  - resource://artifact_0320
+  - resource://artifact_0190
+  graph_cache:
+    root: resource://artifact_0196
+    prefix: graph_cache
+    shards: 64
+  baseline_predictions: resource://artifact_0158
+resolution:
+  mpp: 0.46
+  image_size: 1024
+split:
+  folds: 5
+  group: wsi_id
+training:
+  max_epochs: 100
+  patience: 15
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+runtime:
+  dino_batch_size: 4
+  cpu_threads: 8
+  python: resource://artifact_0097
+  bootstrap_replicates: 10000

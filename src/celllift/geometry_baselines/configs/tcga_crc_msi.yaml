@@ -1,0 +1,32 @@
+protocol_id: paper_rgb_decoupled_mask2d_3d_full_factorial_geometry_baselines
+dataset: tcga_crc_msi
+paths:
+  model_input_root: resource://artifact_0104
+  set_encoding_data_root: resource://artifact_0170
+  mask_conditioning_data_root: resource://artifact_0172
+  data_root: resource://artifact_0150
+  result_root: resource://artifact_0174
+split:
+  validation_folds: 5
+  official_test_frozen: true
+probe:
+  conditioning_mode: mask_rays_only
+  inner_folds: 3
+geometry_training:
+  seeds:
+  - 17
+  - 42
+  - 73
+  - 101
+  - 137
+  encoders:
+  - meanpool
+  - deepsets
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  max_epochs: 100
+  patience: 15
+  dropout: 0.1
+  token_budget: 32000
+runtime:
+  bootstrap_replicates: 10000

@@ -1,0 +1,29 @@
+dataset: tcga_crc_msi
+protocol_id: matched_mask_full3d_vs_residual3d_raw_residual_comparison
+paths:
+  rgb_mask_result_root: resource://artifact_0250
+  residual_result_root: resource://artifact_0252
+  full3d_result_root: resource://artifact_0256
+  result_root: resource://artifact_0258
+split:
+  validation_folds: 5
+  official_test_frozen: true
+fusion:
+  seeds:
+  - 17
+  - 42
+  - 73
+  - 101
+  - 137
+  encoders:
+  - meanpool
+  - deepsets
+  temperature_scaling: true
+  temperature_bounds:
+  - 0.25
+  - 4.0
+  alpha_bounds:
+  - 0.0
+  - 4.0
+runtime:
+  bootstrap_replicates: 10000

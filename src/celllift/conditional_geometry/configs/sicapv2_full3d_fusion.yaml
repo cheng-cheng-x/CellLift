@@ -1,0 +1,26 @@
+dataset: sicapv2
+protocol_id: matched_mask_full3d_vs_residual3d_raw_residual_comparison
+paths:
+  rgb_mask_result_root: resource://artifact_0230
+  residual_result_root: resource://artifact_0232
+  full3d_result_root: resource://artifact_0236
+  result_root: resource://artifact_0238
+split:
+  validation_folds: 4
+  official_test_frozen: true
+fusion:
+  seeds:
+  - 17
+  - 42
+  - 73
+  - 101
+  - 137
+  encoders:
+  - meanpool
+  - deepsets
+  temperature_scaling: false
+  alpha_bounds:
+  - 0.0
+  - 4.0
+runtime:
+  bootstrap_replicates: 10000

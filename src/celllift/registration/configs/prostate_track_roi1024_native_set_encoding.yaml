@@ -1,0 +1,88 @@
+project_root: resource://artifact_0074
+code_root: resource://artifact_0291
+result_root: resource://artifact_0312
+knowledge_root: resource://artifact_0314
+data_root: resource://artifact_0297
+raw_root: resource://artifact_0299
+observer1: resource://artifact_0301
+observer2: resource://artifact_0303
+python: resource://artifact_0097
+valis_env_script: resource://artifact_0305
+valis_image: resource://artifact_0307
+valis_python: /root/.local/bin/python
+scratch_root: local
+physical:
+  mpp_um_per_px: 0.46
+  section_spacing_um: 5.0
+  width_px: 14863
+  height_px: 22387
+  roi_px: 1024
+  global_mpp_um_per_px: 10.0
+  diagnostic_mpp_um_per_px: 3.68
+global:
+  reference_section: 130
+  dice_pass: 0.7
+  dice_recovery_floor: 0.6
+  dice_min_improvement: 0.1
+  dense_min_support: 0.99
+  pilot_window: 31
+  pilot_fallback_window: 15
+  pilot_fallback_overlap: 5
+tracks:
+  min_interval_layers: 3
+  min_tissue_fraction: 0.55
+  max_dark_fraction: 0.005
+  keyframe_interval: 8
+  parent_context_px: 4096
+  rescue_context_px: 2048
+  parent_core_px: 2048
+fine:
+  prealign_dim_px: 2048
+  micro_dim_px: 4096
+  min_landmarks: 20
+  max_landmarks: 100
+  patch_grid: 10
+  patch_px: 96
+  patch_search_px: 64
+  patch_min_ncc: 0.55
+  patch_min_uniqueness: 0.01
+  max_median_tre_um: 2.0
+  max_p90_tre_um: 4.2
+  max_inverse_p90_um: 4.2
+  max_skip_one_p90_um: 6.0
+  dense_min_median_improvement: 0.1
+  dense_max_p90_worsening_um: 1.0
+  jacobian_p1_min: 0.5
+  jacobian_p99_max: 2.0
+  gaussian_sigma_ladder:
+  - 0
+  - 0.5
+  - 1
+  - 2
+  - 4
+  - 8
+runtime:
+  compute_backend: cpu
+  gpu_workers: 0
+  gpu_idle_utilization_max: 5
+  gpu_min_free_memory_mb: 14000
+  gpu_large_context_memory_mb: 28000
+  gpu_probe_seconds: 30
+  cpu_nodes:
+  - local
+  - local
+  - local
+  - local
+  cpu_worker_layout: {}
+  cpu_workers_total: 120
+  cpu_threads_per_worker: 1
+  cpu_qc_workers: 16
+  vips_concurrency: 1
+  vips_access: sequential
+  max_attempts: 6
+  nodes:
+  - local
+  - local
+  - local
+  - local
+  - local

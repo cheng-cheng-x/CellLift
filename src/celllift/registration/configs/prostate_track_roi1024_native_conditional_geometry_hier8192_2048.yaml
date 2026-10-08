@@ -1,0 +1,144 @@
+project_root: resource://artifact_0074
+code_root: resource://artifact_0291
+result_root: resource://artifact_0293
+knowledge_root: resource://artifact_0295
+data_root: resource://artifact_0297
+raw_root: resource://artifact_0299
+observer1: resource://artifact_0301
+observer2: resource://artifact_0303
+python: resource://artifact_0097
+valis_env_script: resource://artifact_0305
+valis_image: resource://artifact_0307
+valis_python: /root/.local/bin/python
+scratch_root: local
+pipeline_mode: hierarchical_conditional_geometry
+reuse:
+  set_encoding_result_root: resource://artifact_0312
+  immutable_stage_dirs:
+  - 01_preflight
+  - 02_thumbnails_order_qc
+  - 03_global_pilots
+  - 04_global_registration
+  - 05_track_candidates
+  immutable_manifests:
+  - slide_identity.tsv
+  - official_fiducials_audit_only.tsv
+  - official_fiducial_source_identity.tsv
+  - thumbnail_qc.tsv
+  - ordering_manifest.tsv
+  - global_transform_manifest.tsv
+  - global_edge_manifest.tsv
+  - track_manifest.tsv
+  - edge_job_manifest.tsv
+physical:
+  mpp_um_per_px: 0.46
+  section_spacing_um: 5.0
+  width_px: 14863
+  height_px: 22387
+  roi_px: 1024
+  global_mpp_um_per_px: 10.0
+  diagnostic_mpp_um_per_px: 3.68
+global:
+  reference_section: 130
+  dice_pass: 0.7
+  dice_recovery_floor: 0.6
+  dice_min_improvement: 0.1
+  dense_min_support: 0.99
+  pilot_window: 31
+  pilot_fallback_window: 15
+  pilot_fallback_overlap: 5
+tracks:
+  min_interval_layers: 3
+  min_tissue_fraction: 0.55
+  max_dark_fraction: 0.005
+  keyframe_interval: 8
+  parent_context_px: 8192
+  rescue_context_px: 2048
+  parent_core_px: 2048
+fine:
+  prealign_dim_px: 2048
+  micro_dim_px: 2048
+  min_landmarks: 20
+  max_landmarks: 100
+  patch_grid: 10
+  patch_px: 96
+  patch_search_px: 64
+  patch_min_ncc: 0.55
+  patch_min_uniqueness: 0.01
+  max_median_tre_um: 2.0
+  max_p90_tre_um: 4.2
+  max_inverse_p90_um: 4.2
+  max_skip_one_p90_um: 6.0
+  dense_min_median_improvement: 0.1
+  dense_max_p90_worsening_um: 1.0
+  jacobian_p1_min: 0.5
+  jacobian_p99_max: 2.0
+  gaussian_sigma_ladder:
+  - 0
+  - 0.5
+  - 1
+  - 2
+  - 4
+  - 8
+hierarchical:
+  parent_context_px: 8192
+  parent_registration_dim_px: 2048
+  child_context_ladder_px:
+  - 2048
+  - 3072
+  - 4096
+  child_registration_dim_px: 2048
+  gaussian_sigma_um_ladder:
+  - 0
+  - 0.368
+  - 0.736
+  - 1.472
+  - 2.208
+  - 2.944
+  - 4.416
+  - 5.888
+  - 8.832
+  - 11.776
+  - 14.72
+  - 17.664
+  - 23.552
+  - 29.44
+  pilot_total_track_edges: 96
+  pilot_positive: 24
+  pilot_near_gate: 24
+  pilot_typical_failure: 24
+  pilot_catastrophic: 12
+  pilot_boundary_or_weak: 12
+  pilot_min_failed_rescue_fraction: 0.05
+  parent_worker_layout: {}
+  child_worker_layout: {}
+  worker_poll_seconds: 30
+  stale_heartbeat_seconds: 600
+  global_pause_sentinel: runtime/PAUSE_PIPELINE
+  launch_mode: shared_node_agents
+  node_agent_ack_timeout_seconds: 300
+runtime:
+  compute_backend: cpu
+  gpu_workers: 0
+  gpu_idle_utilization_max: 5
+  gpu_min_free_memory_mb: 14000
+  gpu_large_context_memory_mb: 28000
+  gpu_probe_seconds: 30
+  cpu_nodes:
+  - local
+  - local
+  cpu_worker_layout: {}
+  cpu_workers_total: 51
+  cpu_threads_per_worker: 1
+  cpu_qc_workers: 16
+  vips_concurrency: 1
+  vips_access: sequential
+  parent_job_timeout_seconds: 1200
+  child_job_timeout_seconds: 900
+  max_attempts: 8
+  nodes:
+  - local
+  - local
+  - local
+  - local
+  - local

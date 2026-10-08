@@ -1,0 +1,19 @@
+protocol_id: paper_rgb_feature_geometry_fusion_feature_fusion
+dataset: tcga_crc_msi
+paths:
+  geometry_baselines_data_root: resource://artifact_0150
+  geometry_baselines_result_root: resource://artifact_0174
+  cross_fitted_correction_result_root: resource://artifact_0276
+  result_root: resource://artifact_0278
+split:
+  validation_folds: 5
+training:
+  rgb_feature_dim: 512
+  head_learning_rate: 0.0001
+  rgb_learning_rate: 2.0e-05
+  geometry_learning_rate: 0.0001
+  weight_decay: 0.0001
+  dropout: 0.1
+  batch_size: 2048
+  max_epochs: 80
+  patience: 12

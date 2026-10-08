@@ -1,0 +1,34 @@
+dataset: sicapv2
+protocol_id: complete_geometry_probability_late_fusion_late_geometry_fusion
+paths:
+  rgb_mask_result_root: resource://artifact_0230
+  geometry_result_root: resource://artifact_0232
+  result_root: resource://artifact_0240
+split:
+  validation_folds: 4
+  official_test_frozen: true
+fusion:
+  seeds:
+  - 17
+  - 42
+  - 73
+  - 101
+  - 137
+  encoders:
+  - meanpool
+  - deepsets
+  primary_weight: 0.25
+  sensitivity_weights:
+  - 0.0
+  - 0.05
+  - 0.1
+  - 0.15
+  - 0.2
+  - 0.25
+  - 0.3
+  - 0.35
+  - 0.4
+  - 0.45
+  - 0.5
+runtime:
+  bootstrap_replicates: 10000

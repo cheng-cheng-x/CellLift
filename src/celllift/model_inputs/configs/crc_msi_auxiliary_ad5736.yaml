@@ -1,0 +1,44 @@
+dataset: crc_msi
+run_id: tcga_crc_dx_msi_model_input_mpp046_set_encoding
+input:
+  mode: nucleus_only
+paths:
+  training_code_root: resource://artifact_0100
+  raw_root: resource://artifact_0102
+  data_root: resource://artifact_0104
+  result_root: resource://artifact_0106
+  knowledge_root: resource://artifact_0108
+runtime:
+  trace_first_patches: 3
+  postprocess_workers: 4
+  max_pending_writes: 8
+  graph_python: resource://artifact_0097
+  hash_workers: 24
+  standardize_shards: 32
+  segment_shards: 16
+  graph_shards: 16
+  graph_workers: 12
+cellpose:
+  require_cuda: true
+  vectorized_get_masks: true
+  sorted_percentile: false
+  environment: resource://artifact_0079
+  version: 3.1.1.3
+  nucleus_model: nuclei
+  nucleus_diameter_px: 17
+  flow_threshold: 0.8
+  cellprob_threshold: -1.0
+  pilot_batch_size: 1
+  batch_size: 8
+  image_chunk_size: 1
+graph:
+  ray_count: 36
+  k_neighbors: 12
+  radius_um: 60.0
+  edge_normalizer_um: 471.04
+  cache_shards: 64
+  lmdb_map_size_bytes: 4294967296
+  training_feature_stats: resource://artifact_0110
+split:
+  seed: 20260811
+  folds: 5

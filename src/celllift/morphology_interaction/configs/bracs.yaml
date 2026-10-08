@@ -1,0 +1,18 @@
+protocol_id: morphology_interaction
+dataset: bracs
+batch: parallel-a
+cache_batch: parallel-set_encoding
+paths:
+  data_root: resource://artifact_0128
+  result_root: resource://artifact_0180
+  set_encoding_data_root: resource://artifact_0136
+  projection_scene_source_root: resource://artifact_0091
+  dino_source_root: resource://artifact_0138
+  dino_weight_path: resource://artifact_0140
+  bracs_data_root: resource://artifact_0134
+  baseline_predictions: resource://artifact_0158
+  serial_cache: resource://artifact_0142
+runtime:
+  python: resource://artifact_0097
+  cpu_threads: 8
+  bootstrap_replicates: 10000

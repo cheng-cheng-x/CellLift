@@ -1,0 +1,48 @@
+dataset: sicapv2
+run_id: sicapv2_set_encoding
+paths:
+  model_input_root: resource://artifact_0122
+  data_root: resource://artifact_0164
+  result_root: resource://artifact_0266
+  upstream_code_root: resource://artifact_0160
+  upstream_config: resource://artifact_0268
+  checkpoint: resource://artifact_0162
+upstream:
+  run_id: compatibility_score_iqr3stage_zdistill_seed42
+  checkpoint_sha256: c3d54ae713364c3b18cd0c6501adffd4102c490c2795e913ed9dbded5405e6fd
+  inference_dtype: float32
+  pose_evidence: empty
+data:
+  expected_graphs: 12081
+  expected_exclusions: 0
+  graph_shards: 64
+  section_thickness_um: 5.0
+  patch_width_um: 471.04
+  patch_height_um: 471.04
+split:
+  official_test_frozen: true
+  validation_folds: 4
+  primary_metric: qwk
+training:
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  dropout: 0.1
+  max_epochs: 100
+  patience: 15
+  hidden_dim: 128
+  amp: fp16
+  token_budget:
+    meanpool: 32000
+    deepsets: 32000
+    set_transformer: 8000
+runtime:
+  python: resource://artifact_0097
+  seed_screen: 42
+  confirm_seeds:
+  - 17
+  - 42
+  - 73
+  - 101
+  - 137
+  bootstrap_replicates: 10000
+  pilot_graphs: 64

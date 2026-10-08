@@ -1,0 +1,88 @@
+{
+  "experiment_id": "prostate_serial_roi1024_native_cellpose3_dual_cross_layer_set_encoding",
+  "rsg_root": "resource://artifact_0075",
+  "result_root": "resource://artifact_0081",
+  "expected": {
+    "registered_layers": 11016,
+    "accepted_edges": 9840,
+    "candidate_edges": 13863,
+    "training_triplets": 6928,
+    "acceptance_rate": 0.7098030729279377
+  },
+  "physical": {
+    "width_px": 1024,
+    "height_px": 1024,
+    "mpp_um_per_px": 0.46,
+    "section_spacing_um": 5.0
+  },
+  "cellpose": {
+    "base_implementation": "resource://artifact_0082",
+    "cellpose_version": "3.1.1.3",
+    "nucleus": {
+      "model_type": "nuclei",
+      "input_mode": "hematoxylin_deconvolution",
+      "channels": [
+        0,
+        0
+      ],
+      "invert": false,
+      "diameter_px": 17.0,
+      "flow_threshold": 0.8,
+      "cellprob_threshold": -1.0,
+      "min_size_px": 8,
+      "batch_size": 8
+    },
+    "cell": {
+      "model_type": "cyto3",
+      "input_mode": "eosin_hematoxylin_deconvolution",
+      "channels": [
+        1,
+        2
+      ],
+      "invert": false,
+      "diameter_px": 20.0,
+      "flow_threshold": 0.8,
+      "cellprob_threshold": -1.0,
+      "min_size_px": 8,
+      "batch_size": 8
+    },
+    "pairing": {
+      "direct_pair_min_nucleus_containment": 0.5
+    }
+  },
+  "artifact_filter": {
+    "rule": "assigned_nucleus_count == 0 AND cell_area_px > 816",
+    "area_threshold_px": 816
+  },
+  "matching": {
+    "gold": "frozen strict matcher recomputed on RSG-6 segmentation",
+    "silver_nucleus": "COEXIST nucleus mutual maximum-overlap anchor plus calibrated nucleus Jaccard LAP recovery",
+    "cell_is_veto": false,
+    "cell_only_is_nucleus_positive": false,
+    "local_residual_limit_px": 12.0,
+    "abs_log_area_ratio_limit": 1.2,
+    "lap_iou_grid": [
+      0.02,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.3
+    ],
+    "lap_margin_grid": [
+      0.0,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "max_empirical_fdr": 0.05,
+    "min_gold_retention": 0.95
+  },
+  "storage": {
+    "format": "parquet",
+    "compression": "zstd",
+    "compression_level": 3,
+    "row_group_size": 131072,
+    "hash_buckets": 64
+  }
+}

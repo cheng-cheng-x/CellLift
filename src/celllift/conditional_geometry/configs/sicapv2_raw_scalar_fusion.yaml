@@ -1,0 +1,26 @@
+dataset: sicapv2
+protocol_id: protected_raw_scalar_logit_fusion_scalar_fusion_sicap
+paths:
+  rgb_mask_result_root: resource://artifact_0230
+  geometry_result_root: resource://artifact_0232
+  result_root: resource://artifact_0242
+split:
+  validation_folds: 4
+  official_test_frozen: true
+fusion:
+  seeds:
+  - 17
+  - 42
+  - 73
+  - 101
+  - 137
+  encoders:
+  - meanpool
+  - deepsets
+  temperature_scaling: false
+  classwise_alpha: false
+  alpha_bounds:
+  - 0.0
+  - 4.0
+runtime:
+  bootstrap_replicates: 10000

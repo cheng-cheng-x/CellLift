@@ -1,0 +1,41 @@
+dataset: sicapv2
+run_id: sicapv2_model_input_mpp046_set_encoding
+input:
+  mode: nucleus_only
+paths:
+  training_code_root: resource://artifact_0100
+  raw_root: resource://artifact_0120
+  data_root: resource://artifact_0122
+  result_root: resource://artifact_0124
+  knowledge_root: resource://artifact_0126
+runtime:
+  trace_first_patches: 3
+  graph_python: resource://artifact_0097
+  hash_workers: 16
+  standardize_shards: 16
+  segment_shards: 8
+  graph_shards: 8
+  graph_workers: 8
+cellpose:
+  require_cuda: true
+  vectorized_get_masks: true
+  sorted_percentile: true
+  environment: resource://artifact_0079
+  version: 3.1.1.3
+  nucleus_model: nuclei
+  nucleus_diameter_px: 17
+  flow_threshold: 0.8
+  cellprob_threshold: -1.0
+  pilot_batch_size: 1
+  batch_size: 8
+  image_chunk_size: 1
+graph:
+  ray_count: 36
+  k_neighbors: 12
+  radius_um: 60.0
+  edge_normalizer_um: 471.04
+  cache_shards: 64
+  lmdb_map_size_bytes: 4294967296
+  training_feature_stats: resource://artifact_0110
+split:
+  source: official_patient_outer_and_four_validation_folds

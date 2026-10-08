@@ -1,0 +1,18 @@
+protocol_id: benchmark_prediction_seed42
+dataset: tcga_crc_msi
+cache_batch: parallel-set_encoding
+paths:
+  data_root: resource://artifact_0128
+  result_root: resource://artifact_0130
+  split_root: resource://artifact_0132
+  paper_rgb_cache: resource://artifact_0148
+  set_encoding_data_root: resource://artifact_0136
+  projection_scene_source_root: resource://artifact_0091
+  dino_source_root: resource://artifact_0138
+  dino_weight_path: resource://artifact_0140
+  geometry_baselines_data_root: resource://artifact_0150
+  serial_cache: resource://artifact_0142
+runtime:
+  python: resource://artifact_0097
+  cpu_threads: 6
+  bootstrap_replicates: 10000

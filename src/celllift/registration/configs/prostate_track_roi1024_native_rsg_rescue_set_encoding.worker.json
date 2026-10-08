@@ -1,0 +1,78 @@
+{
+  "code_root": "resource://artifact_0290",
+  "result_root": "resource://artifact_0291",
+  "physical": {
+    "mpp_um_per_px": 0.46,
+    "section_spacing_um": 5.0,
+    "width_px": 14863,
+    "height_px": 22387,
+    "roi_px": 1024
+  },
+  "tracks": {
+    "keyframe_interval": 8,
+    "parent_context_px": 8192,
+    "rescue_context_px": 2048,
+    "parent_core_px": 2048
+  },
+  "fine": {
+    "prealign_dim_px": 2048,
+    "micro_dim_px": 2048,
+    "min_landmarks": 20,
+    "max_landmarks": 100,
+    "patch_grid": 10,
+    "patch_px": 96,
+    "patch_search_px": 64,
+    "patch_min_ncc": 0.55,
+    "patch_min_uniqueness": 0.01,
+    "max_median_tre_um": 2.0,
+    "max_p90_tre_um": 6.0,
+    "max_inverse_p90_um": 4.2,
+    "max_skip_one_p90_um": 6.0,
+    "dense_min_median_improvement": 0.1,
+    "dense_max_p90_worsening_um": 1.0,
+    "jacobian_p1_min": 0.3,
+    "jacobian_p99_max": 2.0,
+    "gaussian_sigma_ladder": [
+      0,
+      0.5,
+      1,
+      2,
+      4,
+      8
+    ]
+  },
+  "hierarchical": {
+    "parent_context_px": 8192,
+    "parent_registration_dim_px": 2048,
+    "child_context_ladder_px": [
+      2048,
+      3072,
+      4096
+    ],
+    "child_registration_dim_px": 2048,
+    "gaussian_sigma_um_ladder": [
+      0,
+      0.368,
+      0.736,
+      1.472,
+      2.208,
+      2.944,
+      4.416,
+      5.888,
+      8.832,
+      11.776,
+      14.72,
+      17.664,
+      23.552,
+      29.44
+    ]
+  },
+  "runtime": {
+    "compute_backend": "cpu",
+    "cpu_threads_per_worker": 1,
+    "vips_concurrency": 1,
+    "vips_access": "sequential",
+    "parent_job_timeout_seconds": 1200,
+    "child_job_timeout_seconds": 900
+  }
+}

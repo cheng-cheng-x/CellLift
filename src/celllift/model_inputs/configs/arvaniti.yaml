@@ -1,0 +1,58 @@
+dataset: arvaniti
+run_id: arvaniti_model_input_mpp046_set_encoding
+input:
+  mode: nucleus_only
+  geometry: author_window_375_from_core_1550
+  cellpose_scope: full_core_canvas
+  graph_scope: window_crop_only
+  dino_pad: white_origin_to_1024_no_stretch
+paths:
+  raw_root: resource://artifact_0083
+  data_root: resource://artifact_0085
+  result_root: resource://artifact_0087
+  knowledge_root: resource://artifact_0089
+  projection_scene_source_root: resource://artifact_0091
+  projection_scene_checkpoint: resource://artifact_0093
+  projection_scene_input_manifest: resource://artifact_0095
+resolution:
+  source_mpp: 0.23
+  target_mpp: 0.46
+  core_px: 1550
+  window_px: 375
+  window_um: 172.5
+runtime:
+  graph_python: resource://artifact_0097
+  cellpose_python: resource://artifact_0079
+  host_priority:
+  - local
+  - local
+  - local
+  - local
+  - local
+  one_gpu_per_process: true
+cellpose:
+  require_cuda: true
+  vectorized_get_masks: true
+  sorted_percentile: true
+  nucleus_model: nuclei
+  nucleus_diameter_px: 17
+  flow_threshold: 0.8
+  cellprob_threshold: -1.0
+  batch_size: 1
+graph:
+  ray_count: 36
+  k_neighbors: 12
+  radius_um: 60.0
+  edge_normalizer_um: 471.04
+  cache_shards: 64
+  nucleus_only: true
+split:
+  source: author_boards
+  fit:
+  - ZT111
+  - ZT199
+  - ZT204
+  val:
+  - ZT76
+  test:
+  - ZT80

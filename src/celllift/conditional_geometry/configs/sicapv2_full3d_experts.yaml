@@ -1,0 +1,34 @@
+dataset: sicapv2
+run_id: sicapv2_matched_mask_full3d_experts_raw_residual_comparison
+protocol_id: matched_mask_full3d_vs_residual3d_raw_residual_comparison
+residual_source_protocol_id: conditional_3d_residual_patient_crossfit_mask_conditioning_nucleus_mask36_only
+paths:
+  model_input_root: resource://artifact_0122
+  set_encoding_data_root: resource://artifact_0164
+  data_root: resource://artifact_0166
+  result_root: resource://artifact_0236
+split:
+  validation_folds: 4
+  official_test_frozen: true
+probe:
+  conditioning_mode: mask_rays_only
+  inner_folds: 3
+downstream:
+  seeds:
+  - 17
+  - 42
+  - 73
+  - 101
+  - 137
+  encoders:
+  - meanpool
+  - deepsets
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  max_epochs: 100
+  patience: 15
+  dropout: 0.1
+  token_budget: 32000
+runtime:
+  bootstrap_replicates: 10000
+  smoke_graphs: 64

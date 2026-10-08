@@ -1,0 +1,16 @@
+{
+  "split": "test",
+  "graphs": 1101,
+  "tracks": 198,
+  "evaluation_splits": [
+    "test"
+  ],
+  "modes": [
+    "main",
+    "soft"
+  ],
+  "normalization": "reuse training normalization",
+  "checkpoint": "reuse validation-selected checkpoint",
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 42
+}

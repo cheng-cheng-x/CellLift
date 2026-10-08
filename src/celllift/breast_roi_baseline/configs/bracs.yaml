@@ -1,0 +1,87 @@
+dataset: bracs
+run_id: bracs_current_compatibility_score_direct_residual_breast_roi_scalar_fusion
+protocol_id: bracs_current_compatibility_score_direct_residual_breast_roi_scalar_fusion
+paths:
+  organized_root: resource://artifact_0152
+  wsi_manifest: resource://artifact_0154
+  roi_manifest: resource://artifact_0156
+  data_root: resource://artifact_0134
+  result_root: resource://artifact_0158
+  upstream_code_root: resource://artifact_0160
+  checkpoint: resource://artifact_0162
+  training_feature_stats: resource://artifact_0110
+upstream:
+  run_id: compatibility_score_iqr3stage_zdistill_seed42
+  checkpoint_sha256: c3d54ae713364c3b18cd0c6501adffd4102c490c2795e913ed9dbded5405e6fd
+  inference_dtype: float32
+resolution:
+  target_mpp: 0.46
+  tile_size_px: 1024
+  physical_field_um: 471.04
+  pad_value: 255
+  mpp_xy_relative_tolerance: 0.001
+split:
+  development_seed: 20260830
+  final_seed: 20260831
+  folds: 5
+tasks:
+  primary: t7
+  secondary: t3
+  t7_labels:
+  - N
+  - PB
+  - UDH
+  - FEA
+  - ADH
+  - DCIS
+  - IC
+  t3_labels:
+  - BT
+  - AT
+  - MT
+probe:
+  inner_folds: 3
+  conditioning_mode: mask_rays_only
+  train_batch_size: 65536
+  prediction_batch_size: 131072
+training:
+  seeds:
+  - 17
+  - 42
+  - 73
+  - 101
+  - 137
+  encoders:
+  - meanpool
+  - deepsets
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  dropout: 0.1
+  max_epochs: 100
+  patience: 15
+  hidden_dim: 128
+  amp: fp16
+  tile_budget: 256
+  object_budget: 32000
+fusion:
+  protocols:
+  - calibrated_classwise_breast_roi
+  - raw_scalar_scalar_fusion
+  temperature_bounds:
+  - 0.25
+  - 4.0
+  alpha_bounds:
+  - 0.0
+  - 4.0
+runtime:
+  python: resource://artifact_0097
+  cellpose_python: resource://artifact_0079
+  bootstrap_replicates: 10000
+  tile_workers: 16
+  segment_batch_size: 4
+  segment_image_chunk_size: 4
+  segment_postprocess_workers: 4
+  segment_max_pending_writes: 16
+  graph_workers: 8
+  graph_shards: 64
+  rows_per_geometry_shard: 200000

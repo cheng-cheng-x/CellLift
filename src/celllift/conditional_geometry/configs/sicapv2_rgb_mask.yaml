@@ -1,0 +1,42 @@
+dataset: sicapv2
+protocol_id: conditional_3d_residual_patient_crossfit_rgb_mask_conditioning_rgb_nucleus_mask36
+run_id: sicapv2_rgb_nucleus_mask36_conditional_3d_residual_rgb_mask_conditioning
+paths:
+  model_input_root: resource://artifact_0122
+  set_encoding_data_root: resource://artifact_0164
+  data_root: resource://artifact_0244
+  result_root: resource://artifact_0230
+split:
+  validation_folds: 4
+  official_test_frozen: true
+probe:
+  conditioning_mode: rgb_plus_mask_rays
+  sample_anchors: 750000
+  batch_size: 4096
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  max_epochs: 30
+  patience: 5
+  hidden_dim: 256
+  dropout: 0.1
+  inner_folds: 3
+  seed: 20260823
+downstream:
+  seeds:
+  - 17
+  - 42
+  - 73
+  - 101
+  - 137
+  encoders:
+  - meanpool
+  - deepsets
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  max_epochs: 100
+  patience: 15
+  dropout: 0.1
+  token_budget: 32000
+runtime:
+  bootstrap_replicates: 10000
+  smoke_graphs: 64

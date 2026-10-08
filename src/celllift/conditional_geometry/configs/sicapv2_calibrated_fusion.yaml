@@ -1,0 +1,27 @@
+dataset: sicapv2
+protocol_id: protected_calibrated_logit_fusion_calibrated_fusion
+paths:
+  rgb_mask_result_root: resource://artifact_0230
+  geometry_result_root: resource://artifact_0232
+  result_root: resource://artifact_0234
+split:
+  validation_folds: 4
+  official_test_frozen: true
+fusion:
+  seeds:
+  - 17
+  - 42
+  - 73
+  - 101
+  - 137
+  encoders:
+  - meanpool
+  - deepsets
+  temperature_bounds:
+  - 0.25
+  - 4.0
+  alpha_bounds:
+  - 0.0
+  - 4.0
+runtime:
+  bootstrap_replicates: 10000

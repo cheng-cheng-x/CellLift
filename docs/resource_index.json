@@ -1,0 +1,2051 @@
+{
+  "artifact_0001": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/check_bracs.py",
+      "benchmark_prediction/hact_patch.py"
+    ],
+    "variable_names": [
+      "HACT_CODE",
+      "roots"
+    ]
+  },
+  "artifact_0002": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/check_bracs.py"
+    ],
+    "variable_names": [
+      "roots"
+    ]
+  },
+  "artifact_0003": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/check_bracs.py"
+    ],
+    "variable_names": []
+  },
+  "artifact_0004": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/hact_patch.py"
+    ],
+    "variable_names": [
+      "HACT_OUT"
+    ]
+  },
+  "artifact_0005": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/hact_prepare.py",
+      "benchmark_prediction/splits.py",
+      "breast_patient_prediction/paths.py"
+    ],
+    "variable_names": [
+      "BRACS_CANDIDATES",
+      "MANIFEST_CSV"
+    ]
+  },
+  "artifact_0006": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/hact_score.py"
+    ],
+    "variable_names": [
+      "HACT_DATA"
+    ]
+  },
+  "artifact_0007": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/hact_score.py"
+    ],
+    "variable_names": [
+      "OUT"
+    ]
+  },
+  "artifact_0008": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/paths.py",
+      "breast_patient_prediction/paths.py",
+      "core_and_nucleus_prediction/constants.py",
+      "matched_geometry_controls/worker.py",
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "PRETRAIN_PYTHON",
+      "PYTHON",
+      "RECONSTRUCT_PYTHON"
+    ]
+  },
+  "artifact_0009": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/paths.py",
+      "core_and_nucleus_prediction/constants.py",
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "packaged": "src/celllift",
+    "variable_names": [
+      "CODE_ROOT",
+      "REMOTE_CODE"
+    ]
+  },
+  "artifact_0010": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/paths.py"
+    ],
+    "variable_names": [
+      "REMOTE_DATA"
+    ]
+  },
+  "artifact_0011": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/paths.py",
+      "core_and_nucleus_prediction/constants.py"
+    ],
+    "variable_names": [
+      "REMOTE_RESULT",
+      "_RESULT_PARENT"
+    ]
+  },
+  "artifact_0012": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/splits.py"
+    ],
+    "variable_names": [
+      "LABEL_PATHS"
+    ]
+  },
+  "artifact_0013": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/splits.py"
+    ],
+    "variable_names": [
+      "LABEL_PATHS"
+    ]
+  },
+  "artifact_0014": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/splits.py",
+      "breast_patient_prediction/paths.py"
+    ],
+    "variable_names": [
+      "BRACS_CANDIDATES"
+    ]
+  },
+  "artifact_0015": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/splits.py"
+    ],
+    "variable_names": [
+      "BRACS_CANDIDATES"
+    ]
+  },
+  "artifact_0016": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/splits.py"
+    ],
+    "variable_names": [
+      "BRACS_CANDIDATES"
+    ]
+  },
+  "artifact_0017": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/splits.py"
+    ],
+    "variable_names": [
+      "BRACS_CANDIDATES"
+    ]
+  },
+  "artifact_0018": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/splits.py"
+    ],
+    "variable_names": [
+      "index"
+    ]
+  },
+  "artifact_0019": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/model_input/rgb.py"
+    ],
+    "variable_names": []
+  },
+  "artifact_0020": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/model_input/summarize.py"
+    ],
+    "variable_names": [
+      "DEFAULT_DOCS"
+    ]
+  },
+  "artifact_0021": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/paths.py"
+    ],
+    "variable_names": [
+      "REMOTE_DATA_ROOT"
+    ]
+  },
+  "artifact_0022": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/paths.py"
+    ],
+    "variable_names": [
+      "REMOTE_RESULT_ROOT"
+    ]
+  },
+  "artifact_0023": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/paths.py"
+    ],
+    "variable_names": [
+      "ROUTES_RESULT_ROOT"
+    ]
+  },
+  "artifact_0024": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/paths.py"
+    ],
+    "variable_names": [
+      "ROUTES_conditional_geometry_RESULT_ROOT"
+    ]
+  },
+  "artifact_0025": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/paths.py",
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "CELLPOSE_PYTHON"
+    ]
+  },
+  "artifact_0026": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/paths.py"
+    ],
+    "variable_names": [
+      "STAGE1_SLIDES"
+    ]
+  },
+  "artifact_0027": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/paths.py"
+    ],
+    "variable_names": [
+      "CLINICAL_PATIENT"
+    ]
+  },
+  "artifact_0028": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/paths.py"
+    ],
+    "variable_names": [
+      "BRCA_conditional_geometry_MANIFEST"
+    ]
+  },
+  "artifact_0029": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/paths.py"
+    ],
+    "variable_names": [
+      "BRACS_CANDIDATES"
+    ]
+  },
+  "artifact_0030": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/protocol.py"
+    ],
+    "variable_names": [
+      "CBIO_URL"
+    ]
+  },
+  "artifact_0031": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/protocol.py"
+    ],
+    "variable_names": [
+      "CBIO_POINTER_URL"
+    ]
+  },
+  "artifact_0032": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/protocol.py",
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "packaged": "src/celllift/reconstruction",
+    "variable_names": [
+      "ProjectionScene_SOURCE",
+      "ProjectionScene_SOURCE_ROOT"
+    ]
+  },
+  "artifact_0033": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/protocol.py",
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "ProjectionScene_CHECKPOINT"
+    ]
+  },
+  "artifact_0034": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/protocol.py",
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "ProjectionScene_INPUT_MANIFEST",
+      "ProjectionScene_MANIFEST"
+    ]
+  },
+  "artifact_0035": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/protocol.py",
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "DINO_SOURCE",
+      "DINO_SOURCE_ROOT"
+    ]
+  },
+  "artifact_0036": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/protocol.py",
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "DINO_WEIGHTS",
+      "DINO_WEIGHT_PATH"
+    ]
+  },
+  "artifact_0037": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/protocol.py",
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "FEATURE_STATS",
+      "TRAINING_FEATURE_STATS"
+    ]
+  },
+  "artifact_0038": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/routes/config.py"
+    ],
+    "variable_names": [
+      "REMOTE_DOCS"
+    ]
+  },
+  "artifact_0039": {
+    "path": "",
+    "used_by": [
+      "breast_patient_prediction/run.py"
+    ],
+    "variable_names": [
+      "DEFAULT_DOCS"
+    ]
+  },
+  "artifact_0040": {
+    "path": "",
+    "used_by": [
+      "core_and_nucleus_prediction/constants.py",
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "ARVANITI_DATA"
+    ]
+  },
+  "artifact_0041": {
+    "path": "",
+    "used_by": [
+      "core_and_nucleus_prediction/constants.py",
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "LIZARD_DATA"
+    ]
+  },
+  "artifact_0042": {
+    "path": "",
+    "used_by": [
+      "core_and_nucleus_prediction/constants.py"
+    ],
+    "variable_names": [
+      "AUTHOR_REPO"
+    ]
+  },
+  "artifact_0043": {
+    "path": "",
+    "used_by": [
+      "core_and_nucleus_prediction/official_fcn.py"
+    ],
+    "variable_names": [
+      "IMAGENET_H5"
+    ]
+  },
+  "artifact_0044": {
+    "path": "",
+    "used_by": [
+      "core_and_nucleus_prediction/official_fcn.py"
+    ],
+    "variable_names": []
+  },
+  "artifact_0045": {
+    "path": "",
+    "used_by": [
+      "core_and_nucleus_prediction/official_fcn.py"
+    ],
+    "variable_names": [
+      "url"
+    ]
+  },
+  "artifact_0046": {
+    "path": "",
+    "used_by": [
+      "core_and_nucleus_prediction/probe.py"
+    ],
+    "packaged": "src/celllift/conditional_geometry",
+    "variable_names": [
+      "conditional_geometry_ROOT"
+    ]
+  },
+  "artifact_0047": {
+    "path": "",
+    "used_by": [
+      "core_and_nucleus_prediction/worker.py"
+    ],
+    "variable_names": []
+  },
+  "artifact_0048": {
+    "path": "",
+    "used_by": [
+      "downstream_3d_contribution/common.py",
+      "evaluation/geometric_baselines/src/common.py"
+    ],
+    "variable_names": [
+      "PROJECT",
+      "ROOT"
+    ]
+  },
+  "artifact_0049": {
+    "path": "",
+    "used_by": [
+      "downstream_3d_contribution/common.py"
+    ],
+    "variable_names": [
+      "PUBLIC"
+    ]
+  },
+  "artifact_0050": {
+    "path": "",
+    "used_by": [
+      "downstream_3d_contribution/common.py"
+    ],
+    "variable_names": [
+      "RESULT"
+    ]
+  },
+  "artifact_0051": {
+    "path": "",
+    "used_by": [
+      "downstream_3d_contribution/common.py"
+    ],
+    "variable_names": [
+      "DATA"
+    ]
+  },
+  "artifact_0052": {
+    "path": "",
+    "used_by": [
+      "evaluation/geometric_baselines/scripts/evaluate.py"
+    ],
+    "variable_names": [
+      "prepared"
+    ]
+  },
+  "artifact_0053": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/official.py"
+    ],
+    "packaged": "src/celllift/breast_roi_baseline",
+    "variable_names": [
+      "old_code"
+    ]
+  },
+  "artifact_0054": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/worker.py"
+    ],
+    "variable_names": [
+      "GLOBAL_RESULT"
+    ]
+  },
+  "artifact_0055": {
+    "path": "",
+    "used_by": [
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "ARVANITI_RAW"
+    ]
+  },
+  "artifact_0056": {
+    "path": "",
+    "used_by": [
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "LIZARD_RAW"
+    ]
+  },
+  "artifact_0057": {
+    "path": "",
+    "used_by": [
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "ARVANITI_RESULT"
+    ]
+  },
+  "artifact_0058": {
+    "path": "",
+    "used_by": [
+      "model_inputs/arvaniti_lizard/constants.py"
+    ],
+    "variable_names": [
+      "LIZARD_RESULT"
+    ]
+  },
+  "artifact_0059": {
+    "path": "",
+    "used_by": [
+      "model_inputs/common/utils.py"
+    ],
+    "variable_names": [
+      "_NS"
+    ]
+  },
+  "artifact_0060": {
+    "path": "",
+    "used_by": [
+      "model_inputs/common/utils.py"
+    ],
+    "variable_names": [
+      "relation_id"
+    ]
+  },
+  "artifact_0061": {
+    "path": "",
+    "used_by": [
+      "reconstruction/scripts/evaluate.py"
+    ],
+    "variable_names": [
+      "prepared"
+    ]
+  },
+  "artifact_0062": {
+    "path": "",
+    "used_by": [
+      "reconstruction/src/common.py"
+    ],
+    "variable_names": [
+      "PROJECT"
+    ]
+  },
+  "artifact_0063": {
+    "path": "",
+    "used_by": [
+      "reconstruction/src/common.py",
+      "segmentation/prepare.py"
+    ],
+    "variable_names": [
+      "FAMILY",
+      "expected_parent"
+    ]
+  },
+  "artifact_0064": {
+    "path": "",
+    "used_by": [
+      "registration/regroi/core.py"
+    ],
+    "variable_names": [
+      "shell"
+    ]
+  },
+  "artifact_0065": {
+    "path": "",
+    "used_by": [
+      "registration/regroi/core.py",
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml",
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "variable_names": [
+      "shell"
+    ]
+  },
+  "artifact_0066": {
+    "path": "",
+    "used_by": [
+      "segmentation/agent.py"
+    ],
+    "variable_names": [
+      "lock_path"
+    ]
+  },
+  "artifact_0067": {
+    "path": "",
+    "used_by": [
+      "reconstruction/configs/data.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0068": {
+    "path": "",
+    "used_by": [
+      "reconstruction/configs/data.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0069": {
+    "path": "",
+    "used_by": [
+      "reconstruction/configs/data.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0070": {
+    "path": "",
+    "used_by": [
+      "reconstruction/configs/data.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0071": {
+    "path": "",
+    "used_by": [
+      "reconstruction/configs/data.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0072": {
+    "path": "",
+    "used_by": [
+      "reconstruction/configs/data.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0073": {
+    "path": "",
+    "used_by": [
+      "reconstruction/configs/data.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0074": {
+    "path": "",
+    "used_by": [
+      "serial_preparation/configs/cellpose3_dual_serial_config.json",
+      "cross_layer_matching/configs/cellpose3_dual_serial_config.json",
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml",
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "variable_names": [
+      "project_root"
+    ]
+  },
+  "artifact_0075": {
+    "path": "",
+    "used_by": [
+      "serial_preparation/configs/cellpose3_dual_serial_config.json",
+      "serial_preparation/configs/serial_matching.json",
+      "cross_layer_matching/configs/cellpose3_dual_serial_config.json",
+      "cross_layer_matching/configs/serial_matching.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0076": {
+    "path": "",
+    "used_by": [
+      "serial_preparation/configs/cellpose3_dual_serial_config.json",
+      "cross_layer_matching/configs/cellpose3_dual_serial_config.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0077": {
+    "path": "",
+    "used_by": [
+      "serial_preparation/configs/cellpose3_dual_serial_config.json",
+      "cross_layer_matching/configs/cellpose3_dual_serial_config.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0078": {
+    "path": "",
+    "used_by": [
+      "serial_preparation/configs/cellpose3_dual_serial_config.json",
+      "cross_layer_matching/configs/cellpose3_dual_serial_config.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0079": {
+    "path": "",
+    "used_by": [
+      "serial_preparation/configs/cellpose3_dual_serial_config.json",
+      "cross_layer_matching/configs/cellpose3_dual_serial_config.json",
+      "model_inputs/configs/arvaniti.yaml",
+      "model_inputs/configs/crc_msi.yaml",
+      "model_inputs/configs/crc_msi_auxiliary_ad5736.yaml",
+      "model_inputs/configs/sicapv2.yaml",
+      "breast_roi_baseline/configs/bracs.yaml"
+    ],
+    "variable_names": [
+      "cellpose_python",
+      "environment"
+    ]
+  },
+  "artifact_0080": {
+    "path": "",
+    "used_by": [
+      "serial_preparation/configs/cellpose3_dual_serial_config.json",
+      "cross_layer_matching/configs/cellpose3_dual_serial_config.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0081": {
+    "path": "",
+    "used_by": [
+      "serial_preparation/configs/serial_matching.json",
+      "cross_layer_matching/configs/serial_matching.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0082": {
+    "path": "",
+    "used_by": [
+      "serial_preparation/configs/serial_matching.json",
+      "cross_layer_matching/configs/serial_matching.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0083": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/arvaniti.yaml"
+    ],
+    "variable_names": [
+      "raw_root"
+    ]
+  },
+  "artifact_0085": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/arvaniti.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0087": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/arvaniti.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0089": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/arvaniti.yaml"
+    ],
+    "variable_names": [
+      "knowledge_root"
+    ]
+  },
+  "artifact_0091": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/arvaniti.yaml",
+      "model_inputs/configs/lizard.yaml",
+      "benchmark_prediction/configs/bracs.yaml",
+      "benchmark_prediction/configs/sicapv2.yaml",
+      "benchmark_prediction/configs/tcga_crc_msi.yaml",
+      "geometry_experts/configs/bracs.yaml",
+      "geometry_experts/configs/sicapv2.yaml",
+      "geometry_experts/configs/tcga_crc_msi.yaml",
+      "morphology_interaction/configs/bracs.yaml",
+      "morphology_interaction/configs/sicapv2.yaml",
+      "morphology_interaction/configs/tcga_crc_msi.yaml",
+      "matched_geometry_controls/configs/bracs.yaml",
+      "matched_geometry_controls/configs/sicapv2.yaml",
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "packaged": "src/celllift/reconstruction",
+    "variable_names": [
+      "projection_scene_source_root"
+    ]
+  },
+  "artifact_0093": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/arvaniti.yaml",
+      "model_inputs/configs/lizard.yaml",
+      "matched_geometry_controls/configs/bracs.yaml",
+      "matched_geometry_controls/configs/sicapv2.yaml",
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "projection_scene_checkpoint"
+    ]
+  },
+  "artifact_0095": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/arvaniti.yaml",
+      "matched_geometry_controls/configs/bracs.yaml",
+      "matched_geometry_controls/configs/sicapv2.yaml",
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "projection_scene_input_manifest"
+    ]
+  },
+  "artifact_0097": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/arvaniti.yaml",
+      "model_inputs/configs/crc_msi.yaml",
+      "model_inputs/configs/crc_msi_auxiliary_ad5736.yaml",
+      "model_inputs/configs/lizard.yaml",
+      "model_inputs/configs/sicapv2.yaml",
+      "benchmark_prediction/configs/bracs.yaml",
+      "benchmark_prediction/configs/sicapv2.yaml",
+      "benchmark_prediction/configs/tcga_crc_msi.yaml",
+      "breast_roi_baseline/configs/bracs.yaml",
+      "geometry_experts/configs/bracs.yaml",
+      "geometry_experts/configs/sicapv2.yaml",
+      "geometry_experts/configs/tcga_crc_msi.yaml",
+      "morphology_interaction/configs/bracs.yaml",
+      "morphology_interaction/configs/sicapv2.yaml",
+      "morphology_interaction/configs/tcga_crc_msi.yaml",
+      "matched_geometry_controls/configs/bracs.yaml",
+      "matched_geometry_controls/configs/sicapv2.yaml",
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml",
+      "set_encoding/configs/sicapv2.yaml",
+      "set_encoding/configs/tcga_crc_msi.yaml",
+      "scene_residual/configs/bracs.yaml",
+      "scene_residual/configs/sicapv2.yaml",
+      "scene_residual/configs/tcga_crc_msi.yaml",
+      "scene_residual/configs/beta/bracs.yaml",
+      "scene_residual/configs/beta/sicapv2.yaml",
+      "scene_residual/configs/beta/tcga_crc_msi.yaml",
+      "scene_residual/configs/het/bracs.yaml",
+      "scene_residual/configs/het/sicapv2.yaml",
+      "scene_residual/configs/het/tcga_crc_msi.yaml",
+      "scene_residual/configs/local/sicapv2.yaml",
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml",
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "variable_names": [
+      "python",
+      "graph_python"
+    ]
+  },
+  "artifact_0100": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/crc_msi.yaml",
+      "model_inputs/configs/crc_msi_auxiliary_ad5736.yaml",
+      "model_inputs/configs/sicapv2.yaml"
+    ],
+    "packaged": "src/celllift/graph_input_schema",
+    "variable_names": [
+      "training_code_root"
+    ]
+  },
+  "artifact_0102": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/crc_msi.yaml",
+      "model_inputs/configs/crc_msi_auxiliary_ad5736.yaml"
+    ],
+    "variable_names": [
+      "raw_root"
+    ]
+  },
+  "artifact_0104": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/crc_msi.yaml",
+      "model_inputs/configs/crc_msi_auxiliary_ad5736.yaml",
+      "geometry_baselines/configs/tcga_crc_msi.yaml",
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml",
+      "conditional_geometry/configs/tcga_crc_msi.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_full3d_experts.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_mask.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_rgb_mask.yaml",
+      "set_encoding/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "model_input_root",
+      "data_root"
+    ]
+  },
+  "artifact_0106": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/crc_msi.yaml",
+      "model_inputs/configs/crc_msi_auxiliary_ad5736.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0108": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/crc_msi.yaml",
+      "model_inputs/configs/crc_msi_auxiliary_ad5736.yaml"
+    ],
+    "variable_names": [
+      "knowledge_root"
+    ]
+  },
+  "artifact_0110": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/crc_msi.yaml",
+      "model_inputs/configs/crc_msi_auxiliary_ad5736.yaml",
+      "model_inputs/configs/sicapv2.yaml",
+      "breast_roi_baseline/configs/bracs.yaml"
+    ],
+    "variable_names": [
+      "training_feature_stats"
+    ]
+  },
+  "artifact_0112": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/lizard.yaml"
+    ],
+    "variable_names": [
+      "raw_root"
+    ]
+  },
+  "artifact_0114": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/lizard.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0116": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/lizard.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0118": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/lizard.yaml"
+    ],
+    "variable_names": [
+      "knowledge_root"
+    ]
+  },
+  "artifact_0120": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "raw_root"
+    ]
+  },
+  "artifact_0122": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/sicapv2.yaml",
+      "geometry_baselines/configs/sicapv2.yaml",
+      "matched_geometry_controls/configs/sicapv2.yaml",
+      "conditional_geometry/configs/sicapv2.yaml",
+      "conditional_geometry/configs/sicapv2_full3d_experts.yaml",
+      "conditional_geometry/configs/sicapv2_mask.yaml",
+      "conditional_geometry/configs/sicapv2_rgb_mask.yaml",
+      "set_encoding/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "model_input_root",
+      "data_root"
+    ]
+  },
+  "artifact_0124": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0126": {
+    "path": "",
+    "used_by": [
+      "model_inputs/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "knowledge_root"
+    ]
+  },
+  "artifact_0128": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/configs/bracs.yaml",
+      "benchmark_prediction/configs/sicapv2.yaml",
+      "benchmark_prediction/configs/tcga_crc_msi.yaml",
+      "morphology_interaction/configs/bracs.yaml",
+      "morphology_interaction/configs/sicapv2.yaml",
+      "morphology_interaction/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0130": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/configs/bracs.yaml",
+      "benchmark_prediction/configs/sicapv2.yaml",
+      "benchmark_prediction/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0132": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/configs/bracs.yaml",
+      "benchmark_prediction/configs/sicapv2.yaml",
+      "benchmark_prediction/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "split_root"
+    ]
+  },
+  "artifact_0134": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/configs/bracs.yaml",
+      "breast_roi_baseline/configs/bracs.yaml",
+      "geometry_experts/configs/bracs.yaml",
+      "morphology_interaction/configs/bracs.yaml",
+      "matched_geometry_controls/configs/bracs.yaml"
+    ],
+    "variable_names": [
+      "paper_rgb_cache",
+      "bracs_data_root",
+      "data_root",
+      "model_input_root"
+    ]
+  },
+  "artifact_0136": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/configs/bracs.yaml",
+      "benchmark_prediction/configs/sicapv2.yaml",
+      "benchmark_prediction/configs/tcga_crc_msi.yaml",
+      "geometry_experts/configs/bracs.yaml",
+      "geometry_experts/configs/sicapv2.yaml",
+      "geometry_experts/configs/tcga_crc_msi.yaml",
+      "morphology_interaction/configs/bracs.yaml",
+      "morphology_interaction/configs/sicapv2.yaml",
+      "morphology_interaction/configs/tcga_crc_msi.yaml",
+      "scene_residual/configs/bracs.yaml",
+      "scene_residual/configs/sicapv2.yaml",
+      "scene_residual/configs/tcga_crc_msi.yaml",
+      "scene_residual/configs/beta/bracs.yaml",
+      "scene_residual/configs/beta/sicapv2.yaml",
+      "scene_residual/configs/beta/tcga_crc_msi.yaml",
+      "scene_residual/configs/het/bracs.yaml",
+      "scene_residual/configs/het/sicapv2.yaml",
+      "scene_residual/configs/het/tcga_crc_msi.yaml",
+      "scene_residual/configs/local/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "set_encoding_data_root"
+    ]
+  },
+  "artifact_0138": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/configs/bracs.yaml",
+      "benchmark_prediction/configs/sicapv2.yaml",
+      "benchmark_prediction/configs/tcga_crc_msi.yaml",
+      "morphology_interaction/configs/bracs.yaml",
+      "morphology_interaction/configs/sicapv2.yaml",
+      "morphology_interaction/configs/tcga_crc_msi.yaml",
+      "matched_geometry_controls/configs/bracs.yaml",
+      "matched_geometry_controls/configs/sicapv2.yaml",
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "dino_source_root"
+    ]
+  },
+  "artifact_0140": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/configs/bracs.yaml",
+      "benchmark_prediction/configs/sicapv2.yaml",
+      "benchmark_prediction/configs/tcga_crc_msi.yaml",
+      "morphology_interaction/configs/bracs.yaml",
+      "morphology_interaction/configs/sicapv2.yaml",
+      "morphology_interaction/configs/tcga_crc_msi.yaml",
+      "matched_geometry_controls/configs/bracs.yaml",
+      "matched_geometry_controls/configs/sicapv2.yaml",
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "dino_weight_path"
+    ]
+  },
+  "artifact_0142": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/configs/bracs.yaml",
+      "benchmark_prediction/configs/sicapv2.yaml",
+      "benchmark_prediction/configs/tcga_crc_msi.yaml",
+      "morphology_interaction/configs/bracs.yaml",
+      "morphology_interaction/configs/sicapv2.yaml",
+      "morphology_interaction/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "serial_cache"
+    ]
+  },
+  "artifact_0144": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "paper_rgb_cache"
+    ]
+  },
+  "artifact_0146": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/configs/sicapv2.yaml",
+      "geometry_baselines/configs/sicapv2.yaml",
+      "geometry_experts/configs/sicapv2.yaml",
+      "morphology_interaction/configs/sicapv2.yaml",
+      "feature_fusion/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "geometry_baselines_data_root",
+      "data_root"
+    ]
+  },
+  "artifact_0148": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "paper_rgb_cache"
+    ]
+  },
+  "artifact_0150": {
+    "path": "",
+    "used_by": [
+      "benchmark_prediction/configs/tcga_crc_msi.yaml",
+      "geometry_baselines/configs/tcga_crc_msi.yaml",
+      "geometry_experts/configs/tcga_crc_msi.yaml",
+      "morphology_interaction/configs/tcga_crc_msi.yaml",
+      "feature_fusion/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "geometry_baselines_data_root",
+      "data_root"
+    ]
+  },
+  "artifact_0152": {
+    "path": "",
+    "used_by": [
+      "breast_roi_baseline/configs/bracs.yaml"
+    ],
+    "variable_names": [
+      "organized_root"
+    ]
+  },
+  "artifact_0154": {
+    "path": "",
+    "used_by": [
+      "breast_roi_baseline/configs/bracs.yaml"
+    ],
+    "variable_names": [
+      "wsi_manifest"
+    ]
+  },
+  "artifact_0156": {
+    "path": "",
+    "used_by": [
+      "breast_roi_baseline/configs/bracs.yaml"
+    ],
+    "variable_names": [
+      "roi_manifest"
+    ]
+  },
+  "artifact_0158": {
+    "path": "",
+    "used_by": [
+      "breast_roi_baseline/configs/bracs.yaml",
+      "geometry_experts/configs/bracs.yaml",
+      "morphology_interaction/configs/bracs.yaml",
+      "matched_geometry_controls/configs/bracs.yaml",
+      "scene_residual/configs/bracs.yaml",
+      "scene_residual/configs/beta/bracs.yaml",
+      "scene_residual/configs/het/bracs.yaml"
+    ],
+    "variable_names": [
+      "result_root",
+      "baseline_predictions"
+    ]
+  },
+  "artifact_0160": {
+    "path": "",
+    "used_by": [
+      "breast_roi_baseline/configs/bracs.yaml",
+      "set_encoding/configs/sicapv2.yaml",
+      "set_encoding/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "upstream_code_root"
+    ]
+  },
+  "artifact_0162": {
+    "path": "",
+    "used_by": [
+      "breast_roi_baseline/configs/bracs.yaml",
+      "set_encoding/configs/sicapv2.yaml",
+      "set_encoding/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "checkpoint"
+    ]
+  },
+  "artifact_0164": {
+    "path": "",
+    "used_by": [
+      "geometry_baselines/configs/sicapv2.yaml",
+      "conditional_geometry/configs/sicapv2.yaml",
+      "conditional_geometry/configs/sicapv2_full3d_experts.yaml",
+      "conditional_geometry/configs/sicapv2_mask.yaml",
+      "conditional_geometry/configs/sicapv2_rgb_mask.yaml",
+      "set_encoding/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "set_encoding_data_root",
+      "data_root"
+    ]
+  },
+  "artifact_0166": {
+    "path": "",
+    "used_by": [
+      "geometry_baselines/configs/sicapv2.yaml",
+      "conditional_geometry/configs/sicapv2_full3d_experts.yaml",
+      "conditional_geometry/configs/sicapv2_mask.yaml"
+    ],
+    "variable_names": [
+      "data_root",
+      "mask_conditioning_data_root"
+    ]
+  },
+  "artifact_0168": {
+    "path": "",
+    "used_by": [
+      "geometry_baselines/configs/sicapv2.yaml",
+      "geometry_experts/configs/sicapv2.yaml",
+      "morphology_interaction/configs/sicapv2.yaml",
+      "matched_geometry_controls/configs/sicapv2.yaml",
+      "feature_fusion/configs/sicapv2.yaml",
+      "scene_residual/configs/sicapv2.yaml",
+      "scene_residual/configs/beta/sicapv2.yaml",
+      "scene_residual/configs/het/sicapv2.yaml",
+      "scene_residual/configs/local/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "geometry_baselines_result_root",
+      "result_root",
+      "baseline_predictions"
+    ]
+  },
+  "artifact_0170": {
+    "path": "",
+    "used_by": [
+      "geometry_baselines/configs/tcga_crc_msi.yaml",
+      "conditional_geometry/configs/tcga_crc_msi.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_full3d_experts.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_mask.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_rgb_mask.yaml",
+      "set_encoding/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "set_encoding_data_root",
+      "data_root"
+    ]
+  },
+  "artifact_0172": {
+    "path": "",
+    "used_by": [
+      "geometry_baselines/configs/tcga_crc_msi.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_full3d_experts.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_mask.yaml"
+    ],
+    "variable_names": [
+      "data_root",
+      "mask_conditioning_data_root"
+    ]
+  },
+  "artifact_0174": {
+    "path": "",
+    "used_by": [
+      "geometry_baselines/configs/tcga_crc_msi.yaml",
+      "geometry_experts/configs/tcga_crc_msi.yaml",
+      "morphology_interaction/configs/tcga_crc_msi.yaml",
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml",
+      "feature_fusion/configs/tcga_crc_msi.yaml",
+      "scene_residual/configs/tcga_crc_msi.yaml",
+      "scene_residual/configs/beta/tcga_crc_msi.yaml",
+      "scene_residual/configs/het/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "geometry_baselines_result_root",
+      "result_root",
+      "baseline_predictions"
+    ]
+  },
+  "artifact_0176": {
+    "path": "",
+    "used_by": [
+      "geometry_experts/configs/bracs.yaml",
+      "geometry_experts/configs/sicapv2.yaml",
+      "geometry_experts/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0178": {
+    "path": "",
+    "used_by": [
+      "geometry_experts/configs/bracs.yaml",
+      "geometry_experts/configs/sicapv2.yaml",
+      "geometry_experts/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0180": {
+    "path": "",
+    "used_by": [
+      "morphology_interaction/configs/bracs.yaml",
+      "morphology_interaction/configs/sicapv2.yaml",
+      "morphology_interaction/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0182": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/bracs.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0184": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/bracs.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0186": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/bracs.yaml",
+      "matched_geometry_controls/configs/sicapv2.yaml",
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "global_result_root"
+    ]
+  },
+  "artifact_0188": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/bracs.yaml",
+      "matched_geometry_controls/configs/sicapv2.yaml",
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "packaged": "src/celllift/conditional_geometry",
+    "variable_names": [
+      "mask_probe_conditional_geometry_root"
+    ]
+  },
+  "artifact_0190": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/bracs.yaml"
+    ],
+    "variable_names": [
+      "eligible_graph_manifest",
+      "manifest_sources"
+    ]
+  },
+  "artifact_0196": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/bracs.yaml"
+    ],
+    "variable_names": [
+      "root"
+    ]
+  },
+  "artifact_0198": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0200": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0202": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "eligible_graph_manifest",
+      "manifest_sources"
+    ]
+  },
+  "artifact_0210": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "root"
+    ]
+  },
+  "artifact_0212": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0214": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0216": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "eligible_graph_manifest",
+      "manifest_sources"
+    ]
+  },
+  "artifact_0224": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "root"
+    ]
+  },
+  "artifact_0226": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0228": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0230": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/sicapv2_calibrated_fusion.yaml",
+      "conditional_geometry/configs/sicapv2_full3d_fusion.yaml",
+      "conditional_geometry/configs/sicapv2_late_fusion.yaml",
+      "conditional_geometry/configs/sicapv2_raw_scalar_fusion.yaml",
+      "conditional_geometry/configs/sicapv2_rgb_mask.yaml"
+    ],
+    "variable_names": [
+      "rgb_mask_result_root",
+      "result_root"
+    ]
+  },
+  "artifact_0232": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/sicapv2_calibrated_fusion.yaml",
+      "conditional_geometry/configs/sicapv2_full3d_fusion.yaml",
+      "conditional_geometry/configs/sicapv2_late_fusion.yaml",
+      "conditional_geometry/configs/sicapv2_mask.yaml",
+      "conditional_geometry/configs/sicapv2_raw_scalar_fusion.yaml"
+    ],
+    "variable_names": [
+      "geometry_result_root",
+      "residual_result_root",
+      "result_root"
+    ]
+  },
+  "artifact_0234": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/sicapv2_calibrated_fusion.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0236": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/sicapv2_full3d_experts.yaml",
+      "conditional_geometry/configs/sicapv2_full3d_fusion.yaml"
+    ],
+    "variable_names": [
+      "result_root",
+      "full3d_result_root"
+    ]
+  },
+  "artifact_0238": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/sicapv2_full3d_fusion.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0240": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/sicapv2_late_fusion.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0242": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/sicapv2_raw_scalar_fusion.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0244": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/sicapv2_rgb_mask.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0246": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0248": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0250": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/tcga_crc_msi_calibrated_fusion.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_full3d_fusion.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_late_fusion.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_rank_late_fusion.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_rgb_mask.yaml"
+    ],
+    "variable_names": [
+      "rgb_mask_result_root",
+      "result_root"
+    ]
+  },
+  "artifact_0252": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/tcga_crc_msi_calibrated_fusion.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_full3d_fusion.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_late_fusion.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_mask.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_rank_late_fusion.yaml"
+    ],
+    "variable_names": [
+      "geometry_result_root",
+      "residual_result_root",
+      "result_root"
+    ]
+  },
+  "artifact_0254": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/tcga_crc_msi_calibrated_fusion.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0256": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/tcga_crc_msi_full3d_experts.yaml",
+      "conditional_geometry/configs/tcga_crc_msi_full3d_fusion.yaml"
+    ],
+    "variable_names": [
+      "result_root",
+      "full3d_result_root"
+    ]
+  },
+  "artifact_0258": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/tcga_crc_msi_full3d_fusion.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0260": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/tcga_crc_msi_late_fusion.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0262": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/tcga_crc_msi_rank_late_fusion.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0264": {
+    "path": "",
+    "used_by": [
+      "conditional_geometry/configs/tcga_crc_msi_rgb_mask.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0266": {
+    "path": "",
+    "used_by": [
+      "set_encoding/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0268": {
+    "path": "",
+    "used_by": [
+      "set_encoding/configs/sicapv2.yaml",
+      "set_encoding/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "upstream_config"
+    ]
+  },
+  "artifact_0270": {
+    "path": "",
+    "used_by": [
+      "set_encoding/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0272": {
+    "path": "",
+    "used_by": [
+      "feature_fusion/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "cross_fitted_correction_result_root"
+    ]
+  },
+  "artifact_0274": {
+    "path": "",
+    "used_by": [
+      "feature_fusion/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0276": {
+    "path": "",
+    "used_by": [
+      "feature_fusion/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "cross_fitted_correction_result_root"
+    ]
+  },
+  "artifact_0278": {
+    "path": "",
+    "used_by": [
+      "feature_fusion/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0280": {
+    "path": "",
+    "used_by": [
+      "scene_residual/configs/bracs.yaml",
+      "scene_residual/configs/sicapv2.yaml",
+      "scene_residual/configs/tcga_crc_msi.yaml",
+      "scene_residual/configs/beta/bracs.yaml",
+      "scene_residual/configs/beta/sicapv2.yaml",
+      "scene_residual/configs/beta/tcga_crc_msi.yaml",
+      "scene_residual/configs/het/bracs.yaml",
+      "scene_residual/configs/het/sicapv2.yaml",
+      "scene_residual/configs/het/tcga_crc_msi.yaml",
+      "scene_residual/configs/local/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0282": {
+    "path": "",
+    "used_by": [
+      "scene_residual/configs/bracs.yaml",
+      "scene_residual/configs/sicapv2.yaml",
+      "scene_residual/configs/tcga_crc_msi.yaml",
+      "scene_residual/configs/beta/bracs.yaml",
+      "scene_residual/configs/beta/sicapv2.yaml",
+      "scene_residual/configs/beta/tcga_crc_msi.yaml",
+      "scene_residual/configs/het/bracs.yaml",
+      "scene_residual/configs/het/sicapv2.yaml",
+      "scene_residual/configs/het/tcga_crc_msi.yaml",
+      "scene_residual/configs/local/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "result_root",
+      "source_root"
+    ]
+  },
+  "artifact_0284": {
+    "path": "",
+    "used_by": [
+      "scene_residual/configs/beta/bracs.yaml",
+      "scene_residual/configs/beta/sicapv2.yaml",
+      "scene_residual/configs/beta/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0286": {
+    "path": "",
+    "used_by": [
+      "scene_residual/configs/het/bracs.yaml",
+      "scene_residual/configs/het/sicapv2.yaml",
+      "scene_residual/configs/het/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0288": {
+    "path": "",
+    "used_by": [
+      "scene_residual/configs/local/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0290": {
+    "path": "",
+    "used_by": [
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml",
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "variable_names": []
+  },
+  "artifact_0291": {
+    "path": "",
+    "used_by": [
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml",
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "packaged": "src/celllift",
+    "variable_names": [
+      "code_root"
+    ]
+  },
+  "artifact_0293": {
+    "path": "",
+    "used_by": [
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml"
+    ],
+    "variable_names": [
+      "result_root"
+    ]
+  },
+  "artifact_0295": {
+    "path": "",
+    "used_by": [
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml"
+    ],
+    "variable_names": [
+      "knowledge_root"
+    ]
+  },
+  "artifact_0297": {
+    "path": "",
+    "used_by": [
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml",
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "variable_names": [
+      "data_root"
+    ]
+  },
+  "artifact_0299": {
+    "path": "",
+    "used_by": [
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml",
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "variable_names": [
+      "raw_root"
+    ]
+  },
+  "artifact_0301": {
+    "path": "",
+    "used_by": [
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml",
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "variable_names": [
+      "observer1"
+    ]
+  },
+  "artifact_0303": {
+    "path": "",
+    "used_by": [
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml",
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "variable_names": [
+      "observer2"
+    ]
+  },
+  "artifact_0305": {
+    "path": "",
+    "used_by": [
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml",
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "variable_names": [
+      "valis_env_script"
+    ]
+  },
+  "artifact_0307": {
+    "path": "",
+    "used_by": [
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml",
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "variable_names": [
+      "valis_image"
+    ]
+  },
+  "artifact_0312": {
+    "path": "",
+    "used_by": [
+      "registration/configs/prostate_track_roi1024_native_conditional_geometry_hier8192_2048.yaml",
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "variable_names": [
+      "set_encoding_result_root",
+      "result_root"
+    ]
+  },
+  "artifact_0314": {
+    "path": "",
+    "used_by": [
+      "registration/configs/prostate_track_roi1024_native_set_encoding.yaml"
+    ],
+    "variable_names": [
+      "knowledge_root"
+    ]
+  },
+  "artifact_0318": {
+    "path": "",
+    "used_by": [
+      "evaluation/geometric_baselines/configs/data.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0319": {
+    "path": "",
+    "used_by": [
+      "evaluation/geometric_baselines/configs/data.json"
+    ],
+    "variable_names": []
+  },
+  "artifact_0320": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/bracs.yaml"
+    ],
+    "variable_names": [
+      "manifest_sources"
+    ]
+  },
+  "artifact_0321": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "manifest_sources"
+    ]
+  },
+  "artifact_0322": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/sicapv2.yaml"
+    ],
+    "variable_names": [
+      "manifest_sources"
+    ]
+  },
+  "artifact_0323": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "manifest_sources"
+    ]
+  },
+  "artifact_0324": {
+    "path": "",
+    "used_by": [
+      "matched_geometry_controls/configs/tcga_crc_msi.yaml"
+    ],
+    "variable_names": [
+      "manifest_sources"
+    ]
+  }
+}

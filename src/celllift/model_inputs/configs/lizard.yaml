@@ -1,0 +1,52 @@
+dataset: lizard
+run_id: lizard_model_input_mpp046_set_encoding
+input:
+  mode: nucleus_only
+  geometry: gt_inst_map_resampled_plus_1024_halo_tiles
+  cellpose_scope: none
+  label_scope: known_contour_six_class
+  dino_pad: white_origin_to_1024_no_stretch
+paths:
+  raw_root: resource://artifact_0112
+  data_root: resource://artifact_0114
+  result_root: resource://artifact_0116
+  knowledge_root: resource://artifact_0118
+  projection_scene_source_root: resource://artifact_0091
+  projection_scene_checkpoint: resource://artifact_0093
+resolution:
+  source_mpp: 0.5
+  target_mpp: 0.46
+  tile_px: 1024
+  halo_px: 131
+  ownership_px: 762
+runtime:
+  graph_python: resource://artifact_0097
+  host_priority:
+  - local
+  - local
+  - local
+  - local
+  - local
+  one_gpu_per_process: true
+cellpose:
+  enabled: false
+graph:
+  ray_count: 36
+  k_neighbors: 12
+  radius_um: 60.0
+  edge_normalizer_um: 471.04
+  cache_shards: 64
+  nucleus_only: true
+split:
+  source: project_group_aware
+  internal_test: lizard_split_1
+  development: lizard_split_2_plus_3
+  seed: 42
+  note: not paper 3-fold and not withheld TCGA external test
+class_map:
+  1: neutrophil
+  2: epithelial
+  3: lymphocyte
+  4: plasma
+  5: eosinophil
+  6: connective

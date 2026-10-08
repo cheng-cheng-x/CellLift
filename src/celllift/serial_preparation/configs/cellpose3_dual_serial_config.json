@@ -1,0 +1,105 @@
+{
+  "experiment_id": "prostate_serial_roi1024_native_cellpose3_dual_set_encoding",
+  "project_root": "resource://artifact_0074",
+  "source_experiment_root": "resource://artifact_0075",
+  "source_manifest": "resource://artifact_0076",
+  "result_root": "resource://artifact_0077",
+  "knowledge_root": "resource://artifact_0078",
+  "expected_roi_layer_count": 11016,
+  "physical": {
+    "width_px": 1024,
+    "height_px": 1024,
+    "mpp_um_per_px": 0.46
+  },
+  "runtime": {
+    "python": "resource://artifact_0079",
+    "cellpose_version": "3.1.1.3",
+    "model_cache": "resource://artifact_0080",
+    "virtual_shards": 8,
+    "gpu_probe_seconds": 30,
+    "gpu_max_utilization_percent": 5,
+    "gpu_max_used_memory_mb": 2048,
+    "worker_attempts": 3,
+    "heartbeat_seconds": 10,
+    "controller_poll_seconds": 15
+  },
+  "nucleus": {
+    "model_type": "nuclei",
+    "input_mode": "hematoxylin_deconvolution",
+    "channels": [
+      0,
+      0
+    ],
+    "invert": false,
+    "diameter_px": 17.0,
+    "flow_threshold": 0.8,
+    "cellprob_threshold": -1.0,
+    "min_size_px": 8,
+    "batch_size": 8
+  },
+  "cell": {
+    "model_type": "cyto3",
+    "input_mode": "eosin_hematoxylin_deconvolution",
+    "channels": [
+      1,
+      2
+    ],
+    "invert": false,
+    "diameter_px": 20.0,
+    "flow_threshold": 0.8,
+    "cellprob_threshold": -1.0,
+    "min_size_px": 8,
+    "batch_size": 8
+  },
+  "pairing": {
+    "direct_pair_min_nucleus_containment": 0.5,
+    "large_nucleus_free_artifact_area_px": 816
+  },
+  "qc": {
+    "pilot_layer_count": 64,
+    "snapshot_sample_count": 128,
+    "final_contact_sheet_count": 32
+  },
+  "workers": [
+    {
+      "worker_id": 0,
+      "host": "Configured resource",
+      "gpu_index": 1,
+      "gpu_class": "auxiliary_cec43b_32GB",
+      "virtual_slots": [
+        0,
+        1
+      ]
+    },
+    {
+      "worker_id": 1,
+      "host": "Configured resource",
+      "gpu_index": 1,
+      "gpu_class": "P100_16GB",
+      "virtual_slots": [
+        2,
+        3
+      ]
+    },
+    {
+      "worker_id": 2,
+      "host": "Configured resource",
+      "gpu_index": 0,
+      "gpu_class": "P100_16GB",
+      "virtual_slots": [
+        4,
+        5
+      ]
+    },
+    {
+      "worker_id": 3,
+      "host": "Configured resource",
+      "gpu_index": 1,
+      "gpu_class": "P100_16GB",
+      "virtual_slots": [
+        6,
+        7
+      ]
+    }
+  ]
+}
